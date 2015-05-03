@@ -1,27 +1,52 @@
 ---
 layout: base
 ---
-<div class="wrapper">
-    <header>
-        {% if site.compass.logo %}
+    <div class="wrapper">
+      <header>
+        
         <div class="logo-container">
-          <a class="logo" href="{{ page.baseurl }}" style="background-image: url('{{ site.baseurl }}{{ site.compass.logo }}')"></a>
+
+          <span class="fa-stack fa-4x">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-coffee fa-stack-1x fa-inverse"></i>
+          </span>
         </div>
-        {% endif %}
+        <div class="author-container"><h1>Coffee House Club</h1></div>
+        <div class="tagline-container"><p>
+            A place to think & talk
+        </p></div>
+        
+      </header>
+      <main>
+        
+        <div class="content">
+          <!-- <h2>Coffee House Club</h2> -->
+          <p>
+            Coffee House Club is a discussion group held on the first Sunday of every month.
+            We meet to explore and share ideas together with other curious people
+            in a public space.
+          </p>
+          <p>
+            If you'd like to join in, why not introduce yourself on the mailing list, and
+            check out next months theme in the calendar?
+          </p>
+          <!-- <h2>Who?</h2> -->
+          Founded by <a href="http://twitter.com/thatdavidmiller">David</a>,
+          <a href="http://twitter.com/shevski">Irina</a> and
+          <a href="http://twitter.com/JackTownsend">Jack</a>.
+          <hr />
+          <ul class="fa-ul main-list">
+            <li class="main-list-item">
+              <span class="fa fa-calendar fa-lg main-list-item-icon"></span>
+              <a href="https://www.google.com/calendar/embed?src=ZGVhZHBhbnNpbmNlcml0eS5jb21fNW90cmczY25zOXNtM3NpZDNrbnVkNGZwc29AZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Events Calendar</a>
+            </li>
+            <li class="main-list-item">
+              <span class="fa fa-envelope fa-lg main-list-item-icon"></span>
+              <a href="https://groups.google.com/forum/#!forum/coffee-house-club">Mailing List</a>
+            </li>
+          </ul>
 
-        {% if site.compass.author %}
-        <div class="author-container"><h1>{{ site.compass.author }}</h1></div>
-        {% endif %}
-
-        {% if site.compass.tagline %}
-        <div class="tagline-container"><p>{{ site.compass.tagline }}</p></div>
-        {% endif %}
-    </header>
-    <main>
-      {% if site.compass.include_content %}
-      <div class="content">
-        {% include content.html %}
-      </div>
-      {% endif %}
-    </main>
-</div>
+        </div>
+        
+      </main>
+    </div>
