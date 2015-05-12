@@ -148,3 +148,14 @@ footer {
 		padding: 0;
 	}
 }
+
+p.lead {
+       padding-top: 16px;
+       font-size: 1.2em;
+}
+p.lead span.pull-left {
+       padding-left: 16px;
+}
+p.lead span.pull-right {
+       padding-right: 24px;
+}
